@@ -1,8 +1,8 @@
 import re
 class SimpleTokenizerV1:
     def __init__(self, vocab):
-     self.str_to_int = vocab
-     self.int_to_str = {i:s for s, i in vocab.items()}
+         self.str_to_int = vocab
+         self.int_to_str = {i:s for s, i in vocab.items()}
 
     def encode(self, text):
         pre_processed = re.split(r'([,.:;?_!"()\']|--|\s)', text)
